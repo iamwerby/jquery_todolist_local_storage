@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Comfortaa" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" id="todowrap">
+            <h1>Your Perfect ToDo</h1>
+            <div class="input-group">
+                        <span class="input-group-btn">
+                        <button class="btn btn-info" type="button" id="addTask">Add</button>
+                        </span>
+                <input type="text" class="form-control" id="addToDo" placeholder="What are we doing?">
+            </div>
+            <div id="errAlert" class="alert alert-danger" role="alert"><strong>Oops!</strong> Please enter a valid task</div>
+            <br>
+            <ul id="taskUl" class="list-group">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/tasks.js"></script>
+<script src="assets/js/functions.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

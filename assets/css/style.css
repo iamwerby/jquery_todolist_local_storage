@@ -1,0 +1,27 @@
+#todowrap {
+    margin-left: 30%;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+}
+
+p {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.newtask{
+    display: none;
+}
+
+ul li:hover{
+    background-color: #c0e1f2;
+}
+
+.done{
+    background-color: #ffd6cc;
+}
+
+.done p {
+    text-decoration: line-through;
+}

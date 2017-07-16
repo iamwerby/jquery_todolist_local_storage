@@ -1,0 +1,15 @@
+{
+  "name": "todolist",
+  "version": "1.0.1",
+  "description": "To do list on jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iamwerby",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
