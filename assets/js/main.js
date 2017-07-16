@@ -2,7 +2,7 @@
 
 $('#errAlert').hide();
 
-$("#addTask").on('click', function () { //обрабатываем кнопку добавления таска
+$("#addTask").on('click', function () { //add task button handler
     var taskText = $("#addToDo").val();
     if (checkInput(taskText)){
         var newTask = Object.create(defaultTask);
@@ -14,7 +14,7 @@ $("#addTask").on('click', function () { //обрабатываем кнопку 
     } else return false
 });
 
-$(document).on('click',".close",function() { //обрабатываем кнупку удаления таска
+$(document).on('click',".close",function() { //delete task button handler
         var index = $(this).data('index');
         tasks.splice(index,1);
         toLocalStorage(tasks);
@@ -23,7 +23,7 @@ $(document).on('click',".close",function() { //обрабатываем кнуп
         })
 });
 
-$(document).on('change',":checkbox",function() { //обрабатываем отметку чекбокса (выполнение таска)
+$(document).on('change',":checkbox",function() { //checkbox selection handler
     var index = $(this).data('index');
     if(this.checked) {
         tasks[index].isDone = true;
@@ -36,6 +36,6 @@ $(document).on('change',":checkbox",function() { //обрабатываем от
     }
 });
 
-fromLocalStorage(tasks); //достаем данные из local storage
+fromLocalStorage(tasks); //fetching data from local storage
 
 

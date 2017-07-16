@@ -1,6 +1,6 @@
 "use strict";
 
-function createTask(taskText,index,isDone) { //создаем таск с разметкой
+function createTask(taskText,index,isDone) { //creating a task with proper markup
     var taskLi = $('<li>',{ 'class': 'list-group-item'}),
         taskDiv = $('<div>',{ 'class': 'checkbox' }).appendTo(taskLi),
         taskLabel = $('<label>').appendTo(taskDiv),
@@ -27,7 +27,7 @@ function createTask(taskText,index,isDone) { //создаем таск с раз
     $("#taskUl").append(taskLi);
 }
 
-function checkInput(input) { //проверяем введенный текст на адекватность (длинна, отсутствие недопустимых символов)
+function checkInput(input) { //validate the entered text (length and allowed symbols)
     var regex = /^[a-zA-Z0-9 ._-]{1,100}$/;
     if (regex.test(input)) {
         $('#errAlert').hide('slow');
@@ -38,12 +38,12 @@ function checkInput(input) { //проверяем введенный текст 
     }
 }
 
-function toLocalStorage(tasks) { //пушаем изменения в local Storage
+function toLocalStorage(tasks) { //pushing changes to local Storage
     var tasksInJSON = JSON.stringify(tasks);
     localStorage.setItem('currentTasks',tasksInJSON);
 }
 
-function fromLocalStorage(tasks) { //вытаскиваем данные из local storage
+function fromLocalStorage(tasks) { //getting latest data from local storage
     var temp = JSON.parse(localStorage.getItem('currentTasks'));
     for (var i=0; i<temp.length; i++){
         var newTask = Object.create(defaultTask);
