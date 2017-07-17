@@ -4,7 +4,8 @@
 ## About
 Basically, a plain simple todo list app, that uses twitter Bootstrap to look good, jQuery to save the code space
 and browser local storage to store the todo's and keep them available after refresh. To mark the task completed,
-click the checkbox. To delete the task, hit the X mark next to it - it will be removed from Local storage.
+click the checkbox. To delete the task, hit the X mark next to it - it will be removed from Local storage. Check out the
+[demo](https://iamwerby.github.io/) on my GitHub Pages.
 
 ## Installation
 * Clone or fork this repository
